@@ -8,11 +8,12 @@ int main()
 	float annualSalary;
 
 	// Output.
-	cout << "Please enter your annual Salary: ";
+	cout << "Please enter your annual Salary: "; //outputing to the console
 	// Input.
 	cin >> annualSalary;
 	cout << "Your monthly salary is: " << annualSalary / 12 << endl;
 
-	char character = 'a';
-	system("pause>0");
-}
+	char character = 'a'; // single character
+
+	cout << character;
+} 
