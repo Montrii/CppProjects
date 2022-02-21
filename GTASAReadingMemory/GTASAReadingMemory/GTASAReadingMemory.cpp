@@ -6,7 +6,7 @@
 #include <tlhelp32.h>
 
 bool isNotepad(const PROCESSENTRY32W &entry) {
-	return std::wstring(entry.szExeFile) == L"GTA_SA.EXE";
+	return std::wstring(entry.szExeFile) == L"gta_sa.exe";
 }
 
 BOOL CALLBACK enumWindowsProc(HWND hwnd, LPARAM lParam) {
@@ -28,14 +28,14 @@ BOOL CALLBACK enumWindowsProc(HWND hwnd, LPARAM lParam) {
 			HANDLE handle = OpenProcess(PROCESS_ALL_ACCESS, FALSE, pid); 
 			DWORD value = NULL;
 			SIZE_T *v = NULL;
-			ReadProcessMemory(handle, (LPVOID)(0xB7CE50), &value, sizeof(value), v);
+			ReadProcessMemory(handle, (LPVOID)(0xB7CE50 + 0x2680), &value, sizeof(value), v);
 
 
 			std::cout << "PLAYER CASH: " << value << std::endl;
 
-			bool isPlayMission = NULL;
+			DWORD isPlayMission = NULL;
 
-			ReadProcessMemory(handle, (LPVOID)(0xA444B1), &isPlayMission, sizeof(isPlayMission), v);
+			ReadProcessMemory(handle, (LPVOID)(0xBAA420 + 0x2680), &isPlayMission, sizeof(isPlayMission), v);
 
 			std::cout << "IS PLAYER PLAYING MISSION " << isPlayMission << std::endl;
 		}
