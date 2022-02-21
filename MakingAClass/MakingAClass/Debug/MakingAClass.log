@@ -1,0 +1,3 @@
+﻿  MakingAClass.cpp
+c:\users\drago\desktop\schoolstuff\c++\makingaclass\makingaclass\makingaclass.cpp(17): warning C4477: "printf": Die Formatzeichenfolge "%s" erfordert ein Argument vom Typ "char *", das variadic-Argument "1" weist aber den Typ "std::string" auf.
+  MakingAClass.vcxproj -> C:\Users\Drago\Desktop\Schoolstuff\C++\MakingAClass\Debug\MakingAClass.exe

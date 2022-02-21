@@ -37,5 +37,6 @@ int main()
 	cout << int('a') << endl;
 
 
+
 	system("pause>0");
 }

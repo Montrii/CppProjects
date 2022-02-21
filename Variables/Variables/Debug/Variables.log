@@ -1,2 +1,4 @@
 ﻿  Variables.cpp
-  Variables.vcxproj -> C:\Users\Drago\Desktop\Schoolstuff\C++\Variables\Debug\Variables.exe
+c:\users\drago\desktop\schoolstuff\c++\variables\variables\variables.cpp(42): error C2371: "value": Neudefinition; unterschiedliche Basistypen
+  c:\users\drago\desktop\schoolstuff\c++\variables\variables\variables.cpp(28): note: Siehe Deklaration von "value"
+c:\users\drago\desktop\schoolstuff\c++\variables\variables\variables.cpp(44): error C2088: ">>": Ungültig für class
